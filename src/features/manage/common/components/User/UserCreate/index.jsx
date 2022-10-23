@@ -61,7 +61,7 @@ function UserCreate() {
           /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/g,
           "*Số điện thoại chưa chính xác!"
         )
-        .min(9, "*Số điện thoại phải có ít nhất 10 số!"),
+        .min(10, "*Số điện thoại phải có ít nhất 10 số!"),
       birthday: Yup.string()
         .required("*Hãy nhập ngày sinh!")
         .matches(
