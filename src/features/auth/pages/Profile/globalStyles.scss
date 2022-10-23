@@ -1,0 +1,12 @@
+@import "assets/scss/base.scss";
+
+.adminProfileWrapper {
+  padding-block: 100px;
+  background-color: $c-bg;
+  .MuiContainer-root {
+    background-color: $whiteColor;
+    border-radius: 8px;
+    box-shadow: 0 0 8px $c-box-shadow;
+    padding-block: 40px;
+  }
+}

@@ -1,0 +1,48 @@
+@import "assets/scss/base.scss";
+
+.adminLogin {
+  background-color: $c-bg;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-inline: 15px;
+  .formWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: $whiteColor;
+    border-radius: 8px;
+    border: 1px solid $c-border;
+    box-shadow: 0 0 8px $c-box-shadow;
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+    .form {
+      width: 100%;
+      .formGroup {
+        padding-block: 8px;
+        .MuiFormControl-root {
+          width: 100%;
+        }
+      }
+      .action {
+        margin-top: 12px;
+        text-align: center;
+        button {
+          font-size: 16px;
+          font-weight: 600;
+          padding: 12px 24px;
+          border: none;
+          border-radius: 8px;
+          @include primaryContained();
+        }
+      }
+    }
+  }
+}

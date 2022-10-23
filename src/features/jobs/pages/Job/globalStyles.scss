@@ -1,0 +1,28 @@
+@import "assets/scss/base.scss";
+
+.userManage {
+  background-color: $c-bg;
+  padding-block: 90px;
+  .MuiContainer-root {
+    padding-block: 40px;
+    background-color: $whiteColor;
+    .userManageTitle {
+      text-align: center;
+      color: $c-gray-700;
+      font-weight: 700;
+      margin-top: 0;
+    }
+    .addAdminAction,
+    .comebackAction {
+      padding-left: 16px;
+      .MuiButtonBase-root {
+        font-size: 17px;
+        font-weight: 500;
+        transition: 0.4s;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

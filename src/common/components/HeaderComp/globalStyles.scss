@@ -1,0 +1,39 @@
+@import "assets/scss/base.scss";
+
+.headerCompPageMenu {
+  & > .MuiPaper-root {
+    margin-top: 16px;
+    left: 0 !important;
+    height: calc(100vh - 64px);
+    min-width: 300px;
+    background-color: $whiteColor;
+    .MuiList-root {
+      padding-block: 0;
+      .MuiButtonBase-root {
+        padding: 0;
+        p {
+          text-transform: capitalize;
+          padding: 8px 16px;
+          width: 100%;
+          text-align: left;
+          font-weight: 600;
+          color: $c-gray-500;
+        }
+        &:hover {
+          opacity: 0.9;
+          @include primaryContained();
+          p {
+            color: $whiteColor;
+          }
+        }
+        &.selected {
+          opacity: 1;
+          @include primaryContained();
+          p {
+            color: $whiteColor;
+          }
+        }
+      }
+    }
+  }
+}

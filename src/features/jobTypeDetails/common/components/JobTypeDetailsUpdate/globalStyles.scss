@@ -1,0 +1,66 @@
+@import "assets/scss/base.scss";
+
+.userCreateWrapper {
+  padding-block: 20px;
+  .title {
+    text-align: center;
+    color: $c-gray-500;
+    font-weight: 600;
+  }
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    .formGroup {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      padding-block: 12px;
+      padding-inline: 32px;
+      .MuiFormControl-root {
+        width: 300px;
+      }
+      .wrapper {
+        border: 1px solid rgba(0, 0, 0, 0.23);
+        border-radius: 8px;
+        .MuiFormLabel-root {
+          display: inline-block;
+          margin-top: 8px;
+          margin-left: 8px;
+        }
+        .MuiFormGroup-root {
+          min-width: 300px;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        .errorMessage {
+          color: #d32f2f;
+          font-size: 12px;
+          padding-left: 8px;
+          margin-bottom: 8px;
+          margin-left: 8px;
+        }
+      }
+      &.error {
+        .wrapper {
+          border-color: #d32f2f;
+        }
+      }
+    }
+    .formAction {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-block: 24px;
+      button {
+        margin-inline: 24px;
+      }
+      .reset {
+        @include grayOutlined();
+      }
+      .submit {
+        @include primaryContained();
+      }
+    }
+  }
+}

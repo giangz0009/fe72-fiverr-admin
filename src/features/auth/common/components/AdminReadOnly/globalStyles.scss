@@ -1,0 +1,59 @@
+@import "assets/scss/base.scss";
+
+.adminReadOnly {
+  h1 {
+    text-align: center;
+    color: $c-gray-500;
+  }
+  .avatar {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    .MuiAvatar-root {
+      margin: 0 auto;
+      width: 160px;
+      height: 160px;
+    }
+    span {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 26px;
+      font-weight: 700;
+      color: $c-gray-500;
+    }
+  }
+  .profile {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    .profileGroup {
+      p {
+        display: flex;
+        span {
+          font-weight: 600;
+          font-size: 18px;
+          &:first-child {
+            display: inline-block;
+            text-align: right;
+            min-width: 40%;
+            color: $c-gray-500;
+          }
+          &:last-child {
+            display: inline-block;
+            padding-left: 16px;
+            color: $c-gray-600;
+          }
+        }
+      }
+    }
+  }
+  .action {
+    text-align: center;
+    margin-top: 30px;
+    button {
+      @include primaryContained();
+    }
+  }
+}

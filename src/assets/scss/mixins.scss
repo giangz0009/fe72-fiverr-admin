@@ -1,0 +1,69 @@
+@import "./variables.scss";
+
+@mixin primaryOutlined {
+  border: 2px solid $primaryColor;
+  color: $primaryColor;
+  transition: 0.4s;
+  &:hover {
+    background-color: $primaryColor;
+    color: #fff !important;
+  }
+}
+
+@mixin primaryContained {
+  background-color: $primaryColor;
+  color: #fff;
+  transition: 0.4s;
+  &:hover {
+    background-color: $primaryColorHover;
+  }
+}
+
+@mixin secondaryOutlined {
+  border: 2px solid $whiteColor;
+  color: $whiteColor;
+  transition: 0.4s;
+  &:hover {
+    background-color: $whiteColor;
+    color: $c-gray-500;
+  }
+}
+@mixin grayOutlined {
+  border: 1px solid $c-gray-600;
+  color: $c-gray-600;
+  transition: 0.4s;
+  &:hover {
+    background-color: $c-gray-600;
+    color: $whiteColor;
+  }
+}
+
+@mixin limitLine($limitLine: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $limitLine; /* number of lines to show */
+  line-clamp: $limitLine;
+  -webkit-box-orient: vertical;
+}
+
+@mixin res_sm {
+  @media (min-width: $res-sm) {
+    @content;
+  }
+}
+@mixin res_md {
+  @media (min-width: $res-md) {
+    @content;
+  }
+}
+@mixin res_lg {
+  @media (min-width: $res-lg) {
+    @content;
+  }
+}
+@mixin res_xl {
+  @media (min-width: $res-xl) {
+    @content;
+  }
+}

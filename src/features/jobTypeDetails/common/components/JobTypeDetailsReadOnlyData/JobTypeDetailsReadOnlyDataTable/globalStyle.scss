@@ -1,0 +1,25 @@
+@import "assets/scss/base.scss";
+
+.jobReadOnlyDataTable {
+  p {
+    @include limitLine(3);
+    max-width: 260px;
+  }
+}
+.jobTypeDetailsListWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  .item {
+    position: relative;
+    & > span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      border-radius: 4px;
+      padding-block: 8px;
+      @include primaryContained();
+    }
+  }
+}

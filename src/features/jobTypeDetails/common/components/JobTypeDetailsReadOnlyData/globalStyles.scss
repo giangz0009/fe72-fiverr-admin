@@ -1,0 +1,23 @@
+@import "assets/scss/base.scss";
+
+.userReadOnlyData {
+  .filter {
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input {
+      flex: 1;
+      margin-right: 24px;
+      padding: 8px 12px;
+      background-color: $c-bg;
+      border: 1px solid $c-border;
+      border-radius: 4px;
+      outline: none;
+      font-size: 16px;
+    }
+    button {
+      @include primaryContained();
+    }
+  }
+}
